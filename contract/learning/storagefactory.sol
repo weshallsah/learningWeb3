@@ -7,7 +7,7 @@ contract StorageFactory {
     SimpleStorage[] public simplestorage;
 
     function createSimpelStorage() public {
-        simplestorage.push(new SimpleStorage());
+        simplestorage.push(new SimpleStorage()); 
     }
     function sfstore(uint256 _ssidx,uint256 _newssnumber) public {
         // ABI = application binary interface
